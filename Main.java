@@ -22,7 +22,13 @@ public class Main {
 		product3.unitPrice= 1500;
 		product3.detail = "8 GB RAM";
 		
-		Product[] products = {product1,product2,product3};
+		Product product4 = new Product();
+		product4.id=2;
+		product4.name="Ä°phone 7";
+		product.unitPrice= 3500;
+		product4.detail="64 GB RAM";
+		
+		Product[] products = {product1,product2,product3,product4};
 	
 		for (Product product : products) { 
 			System.out.println(product.name);
@@ -31,12 +37,12 @@ public class Main {
 		System.out.println(products.length);
 		
 		Category category1 = new Category();
-		category1.ýd=1;
+		category1.Ã½d=1;
 		category1.name="Bilgisayar";
 		
 		Category category2 = new Category();
-		category2.ýd=2;
-		category2.name="Ev/Bahçe";
+		category2.Ã½d=2;
+		category2.name="Telefon";
 		
 		ProductManager productManager = new ProductManager();
 		productManager.addToCart(product1);
@@ -44,6 +50,8 @@ public class Main {
 		productManager.addToCart(product2);
 		
 		productManager.addToCart(product3);
+		
+		productManager.addToCart(product4);
 		
 		
 		
